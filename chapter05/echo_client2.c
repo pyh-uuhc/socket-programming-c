@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
     After
     */
 
-    str_len = write(sock, message, stralen(message));
+    str_len = write(sock, message, strlen(message));
 
     recv_len = 0;
     while (recv_len < str_len) {
